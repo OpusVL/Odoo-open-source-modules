@@ -22,9 +22,10 @@
 
 
 {
-    'name': 'Accounts Reset',
+    'name': 'Erase test accounting transactions',
     'version': '0.1',
     'author': 'OpusVL',
+    'company': 'OpusVL',
     'website': 'https://opusvl.com/',
     'summary': 'Automatically reset accounts ready for transition to live, for example',
     
@@ -50,7 +51,7 @@
 
     Click the 'Reset Accounts' button.  Note that this operation, especially the voucher cancellation stage, is quite slow.
 """,
-    'images': [
+    'images': ['static/description/app-logo.jpeg'
     ],
     'depends': [
         'account',
