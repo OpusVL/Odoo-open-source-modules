@@ -63,10 +63,11 @@
             <section class="container oe_spaced spacing">
                 <div class=" row ">
                     <div class="col-md-8 col-md-offset-2">
-                        <h2 class="text-center" style="color:#875A7B;">Removing Accounting Entries</h2>
+                        <h2 class="text-center" style="color:#875A7B;">Erase test accounting transactions</h2>
                         <h3 class="text-center">Overview</h3>
                         <p class="intro-text">
-                            This module enables the user to erase all the accounting transaction records and ‘zero’ the accounts present in Odoo with a single click. It is currently supported on Odoo Version 8. The accounting transaction records which will be deleted are as specified below:
+                            This module enables the user to erase certain accounting transaction records and safely ‘zero’ the Odoo account chart easily. 
+                            The accounting transaction records which will be deleted are as specified below:
                         </p>
                         <div class="boxes " style="display: flex; flex-flow: row wrap; justify-content: space-around; align-items: stretch; ">
                             <ul class="small-box alert alert-info">
@@ -75,8 +76,6 @@
                                 <li>Customer Invoices</li>
                                 <li>Customer Payments</li>
                                 <li>Customer Refunds</li>
-                            </ul>
-                            <ul class="small-box alert alert-success">
                                 <li>Supplier Invoices</li>
                                 <li>Supplier Payments</li>
                                 <li>Supplier Refunds</li>
@@ -92,13 +91,15 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="" style="color:#875A7B;">Purpose</h2>
                         <p class="" style="">
-                            The purpose of this module is to remove accounting transactions. It is used during development stages of an Odoo project to remove financial data that was created whilst testing. As this module is for removing transactions it should not installed or used after go live. This may be possible in the future- see roadmap for upcoming developments
+                            The purpose of this module is to remove accounting transactions and 'zero' the accounts chart. It is used during the development and test stages of an Odoo project to remove financial data that was created whilst testing. 
+                            As this module is designed to remove transactions, it should not installed or used after go live as live data will be removed. 
+                            See roadmap for planned developments below.
                         </p>
                         <p class="" style="">
-                            This module reduces the company's overhead cost of purging each and every single transaction data manually and its manual verification thereafter.
+                            This module reduces the development overhead of purging each transaction manually and then verifyication of the charts.
                         </p>
                         <p class="intro-text" style="">
-                            If erasure of test data is not done in a timely manner, it will have adverse repercussions on the productivity of day to day business operations and development tasks which is reliant on the software.
+                            If test data is not removed after testing, it will interfere with live customer data.
                         </p>
                         <div class="oe_demo  oe_screenshot" style="max-height: 100%">
                             <img src="key-features.jpg">
@@ -112,9 +113,9 @@
                         <h2 class="" style="color:#875A7B;">Key Features</h2>
                         <p class="" style="">
                             <ul>
-                                <li>Provides the facility to select the company for which transactions need to be rolled back.</li>
-                                <li>Option to mandate a second user’s opinion before the rollback can be enabled</li>
-                                <li>Separate user group for “Remove Operations” for assigning permissions to designated individuals and team members</li>
+                                <li>Provides the facility to select the company for which transactions need to be erased</li>
+                                <li>Option to mandate a second user’s confirmation before the rollback can be executed</li>
+                                <li>Provides Odoo permission control to access the erase function</li>
                             </ul>
                         </p>
                     </div>
@@ -126,10 +127,10 @@
                         <h2 class="" style="color:#875A7B;">Key Benefits</h2>
                         <p class="" style="">
                             <ul>
-                                <li>Transaction removal function enabled with a single click</li>
+                                <li>Relaible and repeatable transaction removal function</li>
                                 <li>User friendly web interface allows all users to navigate the system, regardless of technical ability</li>
                                 <li>Controls and permissions can be set as needed to ensure security</li>
-                                <li>Multi-user validation can be made mandatory - this is an optional setting</li>
+                                <li>Multi-user validation can be optionally configured</li>
                             </ul>
                         </p>
                     </div>
@@ -141,8 +142,8 @@
                         <h2 class="" style="color:#875A7B;">Future roadmap</h2>
                         <p class="" style="">
                             <ul>
-                                <li>Date ranges to allow for more accurate selection of records</li>
-                                <li>Automatic minimum retention policy- 6 years is UK law to retain accounting records</li>
+                                <li>start and end date ranges to allow for more accurate selection of records</li>
+                                <li>Automatic minimum retention policy (UK rules require 6 year retention</li>
                             </ul>
                         </p>
                     </div>
