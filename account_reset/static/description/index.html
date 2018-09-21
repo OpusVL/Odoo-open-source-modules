@@ -1,0 +1,363 @@
+<style>
+    .spacing {
+        padding: 4rem;
+        background-color: #fff;
+        margin: 0 auto;
+    }
+
+    #loempia_tabs #loempia_tabs_content {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #loempia_tabs {
+        background-color: #F9F9F9;
+    }
+
+    .container.oe_dark {
+        background-color: #efefef;
+    }
+
+    .small-box {
+        max-width: 49%;
+        padding: 3rem 5rem;
+    }
+
+    .intro-text {
+        padding-bottom: 3rem;
+    }
+
+    .list-item {
+        padding-top: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .footer-image {
+        height: 45px;
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    .logo-wrapper {
+        text-align: right;
+    }
+
+    @media screen and (max-width: 992px) {
+        .boxes {
+            flex-wrap: wrap;
+        }
+
+        .boxes ul {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+<div id="loempia_tabs">
+    <ul role="navigation" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#desc" data-toggle="tab">Description</a></li>
+        <li><a href="#doc" data-toggle="tab">Documentation</a></li>
+    </ul>
+    <div id="loempia_tabs_content" class="tab-content">
+        <div class="tab-pane active" id="desc">
+            <section class="container oe_spaced spacing">
+                <div class=" row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="text-center" style="color:#875A7B;">Erase test accounting transactions</h2>
+                        <h3 class="text-center">Overview</h3>
+                        <p class="intro-text">
+                            This module enables the user to erase certain accounting transaction records and safely ‘zero’ the Odoo account chart easily.
+                            The accounting transaction records which will be deleted are as specified below:
+                        </p>
+                        <div class="boxes " style="display: flex; flex-flow: row wrap; justify-content: space-around; align-items: stretch; ">
+                            <ul class="small-box alert alert-info">
+                                <li>Journal Entries</li>
+                                <li>Journal Items</li>
+                                <li>Customer Invoices</li>
+                                <li>Customer Payments</li>
+                                <li>Customer Refunds</li>
+                                <li>Supplier Invoices</li>
+                                <li>Supplier Payments</li>
+                                <li>Supplier Refunds</li>
+                                <li>Complete Chart of Accounts</li>
+                                <li>Complete Chart of Taxes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced oe_dark spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="" style="color:#875A7B;">Purpose</h2>
+                        <p class="" style="">
+                            The purpose of this module is to remove accounting transactions and 'zero' the accounts chart. It is used during the development and test stages of an Odoo project to remove financial data that was created whilst testing.
+                            As this module is designed to remove transactions, it should not installed or used after go live as live data will be removed.
+                            See roadmap for planned developments below.
+                        </p>
+                        <p class="" style="">
+                            This module reduces the development overhead of purging each transaction manually and then verifyication of the charts.
+                        </p>
+                        <p class="intro-text" style="">
+                            If test data is not removed after testing, it will interfere with live customer data.
+                        </p>
+                        <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                            <img src="key-features.jpg">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="" style="color:#875A7B;">Key Features</h2>
+                        <p class="" style="">
+                            <ul>
+                                <li>Provides the facility to select the company for which transactions need to be erased</li>
+                                <li>Option to mandate a second user’s confirmation before the rollback can be executed</li>
+                                <li>Provides Odoo permission control to access the erase function</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced oe_dark spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="" style="color:#875A7B;">Key Benefits</h2>
+                        <p class="" style="">
+                            <ul>
+                                <li>Relaible and repeatable transaction removal function</li>
+                                <li>User friendly web interface allows all users to navigate the system, regardless of technical ability</li>
+                                <li>Controls and permissions can be set as needed to ensure security</li>
+                                <li>Multi-user validation can be optionally configured</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="" style="color:#875A7B;">Future roadmap</h2>
+                        <p class="" style="">
+                            <ul>
+                                <li>start and end date ranges to allow for more accurate selection of records</li>
+                                <li>Automatic minimum retention policy (UK rules require 6 year retention</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced oe_dark spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="" style="color:#875A7B;">Support</h2>
+                        <div class="row">
+
+                            <div class="col-sm-6">
+                                <p>
+                                    <ul style="list-style:none; padding: 0;">
+                                        <li>Contributions to this module are welcomed via <a href="https://github.com/OpusVL/odoo-marketplace/pulls">GitHub pull requests.</a> To report a problem please <a href="https://github.com/OpusVL/odoo-marketplace/issues">raise an Issue on GitHub</a>.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>
+                                    <ul style="list-style:none; padding: 0;">
+                                        <li>Commercial support is available, please email <a href="mailto:hello@opusvl.com"> hello@opusvl.com</a> or call <a href="tel:01788298450">01788 298 450</a> for further information.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-sm-offset-6 ">
+                                <p class="logo-wrapper">
+                                    <a href="//opusvl.com">
+                                        <img itemprop="image" class="deep-1 footer-image " src="./opusvl-black-logo.svg">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tab-pane" id="doc">
+            <section class="container oe_spaced spacing ">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 style="color:#875A7B;">Removing Accounting Entries</h2>
+                        <h3>How to install</h3>
+                        <p class="" style="">
+                            <ul>
+                                <li>Firstly, ensure that the module file is present in the add-ons directory of the Odoo server</li>
+                                <li>Update Modules list so that it appears in the UI within Apps store</li>
+                                <li>Look for the module within Apps store and click on Install.</li>
+                                <li>Additionally, make sure that the required user has been assigned to the user group 'Accounts Reset'. This will enable the concerned user have access of all the functionalities brought through this module.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced oe_dark spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="">Step by Step Instructions</h3>
+                        <p class="" style="">
+                            1) The below screenshots depict the current state of accounting transactions, Journal entries, Chart of taxes and Chart of accounts in Odoo system before execution of the removal script.
+                        </p>
+                        <ol style="list-style-type:lower-latin;">
+                            <li>
+                                <p class="list-item">
+                                    Customer Invoices (Validated and Paid)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="customer-invoice.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Customer Payments (Posted)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="customer-payments.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Supplier Invoices (Validated and Paid)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="supplier-invoices.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Supplier Payments (Posted)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="supplier-payments.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Journal Entries (Posted)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="journal-entries.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Journal Items (Posted & Reconciled)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="journal-items-posted.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Chart of Accounts
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="chart--accounts.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Chart of Taxes
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="chart-taxes.jpg">
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <p>2) Now, execute the script using the following steps:</p>
+                        <p>
+                            Go to Accounting → Configuration → Reset Accounts. A help wizard will then open.
+                            <div class="oe_demo  oe_spaced oe_screenshot" style="max-height: 100%">
+                                <img src="wizard.jpg">
+                            </div>
+                        </p>
+                        <p>3) Select the 'Company' for which accounting entries needs to be erased.</p>
+                        <p>4) Tick the checkbox to confirm you understand the implications of this action</p>
+                        <p>5) Click on 'Reset Accounts' button</p>
+                        <p>
+                            This will trigger the execution of script at the back end and all the accounting entries will be rolled back to 0
+                        </p>
+                        <p>6) Provided below are the screenshots after execution of the removal operation which shows the entries are rolled back to 0.</p>
+                    </div>
+                    <div class="col-md-8 col-md-offset-2">
+                        <ol style="list-style-type:lower-latin;">
+                            <li>
+                                <p class="list-item">
+                                    Journal Entries (after execution of removal Script)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="journal-after-script.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Journal Items (after execution of removal Script)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="journal-items-after-script.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Chart of Accounts (after execution of removal Script)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="chart--accounts-after-scripts.jpg">
+                                </div>
+                            </li>
+                            <li>
+                                <p class="list-item">
+                                    Chart of Taxes (after execution of removal Script)
+                                </p>
+                                <div class="oe_demo  oe_screenshot" style="max-height: 100%">
+                                    <img src="chart-taxes-after-scripts.jpg">
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <section class="container oe_spaced oe_dark spacing">
+                <div class="row ">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="" style="color:#875A7B;">Support</h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p>
+                                    <ul style="list-style:none; padding: 0;">
+                                        <li>Contributions to this module are welcomed via <a href="https://github.com/OpusVL/odoo-marketplace/pulls">GitHub pull requests.</a> To report a problem please <a href="https://github.com/OpusVL/odoo-marketplace/issues">raise an Issue on GitHub</a>.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>
+                                    <ul style="list-style:none; padding: 0;">
+                                        <li>Commercial support is available, please email <a href="hello@opusvl.com"> hello@opusvl.com</a> or call <a href="tel:01788298450">01788 298 450</a> for further information.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="col-sm-6 col-sm-offset-6">
+                                <p class="logo-wrapper">
+                                    <img itemprop="image" class="deep-1 footer-image " src="./opusvl-black-logo.svg">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
