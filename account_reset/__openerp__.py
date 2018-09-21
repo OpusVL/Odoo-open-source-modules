@@ -25,7 +25,7 @@
     'name': 'Accounts Reset',
     'version': '0.1',
     'author': 'OpusVL',
-    'website': 'http://opusvl.com/',
+    'website': 'https://opusvl.com/',
     'summary': 'Automatically reset accounts ready for transition to live, for example',
     
     'category': 'Technical',
