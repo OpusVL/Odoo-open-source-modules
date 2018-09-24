@@ -1,76 +1,36 @@
-<style>
-    .spacing {
-        padding: 4rem;
-        background-color: #fff;
-        margin: 0 auto;
-    }
+<div id="loempia_tabs" style="   background-color: #F9F9F9;">
+    <style>
+        @media screen and (max-width: 992px) {
+            .boxes {
+                flex-wrap: wrap;
+            }
 
-    #loempia_tabs #loempia_tabs_content {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    #loempia_tabs {
-        background-color: #F9F9F9;
-    }
-
-    .container.oe_dark {
-        background-color: #efefef;
-    }
-
-    .small-box {
-        max-width: 49%;
-        padding: 3rem 5rem;
-    }
-
-    .intro-text {
-        padding-bottom: 3rem;
-    }
-
-    .list-item {
-        padding-top: 2.5rem;
-        padding-bottom: 1rem;
-    }
-
-    .footer-image {
-        height: 45px;
-        box-shadow: 0 0 0 0 transparent;
-    }
-
-    .logo-wrapper {
-        text-align: right;
-    }
-
-    @media screen and (max-width: 992px) {
-        .boxes {
-            flex-wrap: wrap;
+            .boxes ul {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+            }
         }
-
-        .boxes ul {
-            display: block;
-            width: 100%;
-            max-width: 100%;
-        }
-    }
-</style>
-<div id="loempia_tabs">
+    </style>
     <ul role="navigation" class="nav nav-tabs" data-tabs="tabs">
         <li class="active"><a href="#desc" data-toggle="tab">Description</a></li>
         <li><a href="#doc" data-toggle="tab">Documentation</a></li>
     </ul>
-    <div id="loempia_tabs_content" class="tab-content">
+    <div id="loempia_tabs_content" class="tab-content" style="padding-top: 0;padding-bottom: 0;">
         <div class="tab-pane active" id="desc">
-            <section class="container oe_spaced spacing">
+            <section class="container oe_spaced spacing" style="  padding: 4rem;
+              background-color: #fff;
+              margin: 0 auto;">
                 <div class=" row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="text-center" style="color:#875A7B;">Erase test accounting transactions</h2>
                         <h3 class="text-center">Overview</h3>
-                        <p class="intro-text">
+                        <p class="intro-text" style="      padding-bottom: 3rem;">
                             This module enables the user to erase certain accounting transaction records and safely ‘zero’ the Odoo account chart easily.
                             The accounting transaction records which will be deleted are as specified below:
                         </p>
                         <div class="boxes " style="display: flex; flex-flow: row wrap; justify-content: space-around; align-items: stretch; ">
-                            <ul class="small-box alert alert-info">
+                            <ul class="small-box alert alert-info" style="max-width: 49%; padding: 3rem 5rem;">
                                 <li>Journal Entries</li>
                                 <li>Journal Items</li>
                                 <li>Customer Invoices</li>
@@ -86,7 +46,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced oe_dark spacing">
+            <section class="container oe_spaced oe_dark spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="" style="color:#875A7B;">Purpose</h2>
@@ -98,7 +60,7 @@
                         <p class="" style="">
                             This module reduces the development overhead of purging each transaction manually and then verifyication of the charts.
                         </p>
-                        <p class="intro-text" style="">
+                        <p class="intro-text" style="      padding-bottom: 3rem;">
                             If test data is not removed after testing, it will interfere with live customer data.
                         </p>
                         <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -107,7 +69,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced spacing">
+            <section class="container oe_spaced spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="" style="color:#875A7B;">Key Features</h2>
@@ -121,7 +85,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced oe_dark spacing">
+            <section class="container oe_spaced oe_dark spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="" style="color:#875A7B;">Key Benefits</h2>
@@ -136,7 +102,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced spacing">
+            <section class="container oe_spaced spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="" style="color:#875A7B;">Future roadmap</h2>
@@ -149,7 +117,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced oe_dark spacing">
+            <section class="container oe_spaced oe_dark spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="" style="color:#875A7B;">Support</h2>
@@ -170,9 +140,10 @@
                                 </p>
                             </div>
                             <div class="col-sm-6 col-sm-offset-6 ">
-                                <p class="logo-wrapper">
+                                <p class="logo-wrapper text-right">
                                     <a href="//opusvl.com">
-                                        <img itemprop="image" class="deep-1 footer-image " src="./opusvl-black-logo.svg">
+                                        <img itemprop="image" class="deep-1 footer-image " style="              height: 45px;
+              box-shadow: 0 0 0 0 transparent;" src="./opusvl-black-logo.svg">
                                     </a>
                                 </p>
                             </div>
@@ -182,7 +153,9 @@
             </section>
         </div>
         <div class="tab-pane" id="doc">
-            <section class="container oe_spaced spacing ">
+            <section class="container oe_spaced spacing " style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 style="color:#875A7B;">Erase test accounting transactions</h2>
@@ -198,7 +171,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced oe_dark spacing">
+            <section class="container oe_spaced oe_dark spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h3 class="">Step by Step Instructions</h3>
@@ -207,7 +182,8 @@
                         </p>
                         <ol style="list-style-type:lower-latin;">
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Customer Invoices (Validated and Paid)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -215,7 +191,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Customer Payments (Posted)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -223,7 +200,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Supplier Invoices (Validated and Paid)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -231,7 +209,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Supplier Payments (Posted)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -239,7 +218,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Journal Entries (Posted)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -247,7 +227,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Journal Items (Posted & Reconciled)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -255,7 +236,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Chart of Accounts
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -263,7 +245,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Chart of Taxes
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -274,7 +257,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced spacing">
+            <section class="container oe_spaced spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <p>2) Now, execute the script using the following steps:</p>
@@ -295,7 +280,8 @@
                     <div class="col-md-8 col-md-offset-2">
                         <ol style="list-style-type:lower-latin;">
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Journal Entries (after execution of removal Script)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -303,7 +289,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Journal Items (after execution of removal Script)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -311,7 +298,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Chart of Accounts (after execution of removal Script)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -319,7 +307,8 @@
                                 </div>
                             </li>
                             <li>
-                                <p class="list-item">
+                                <p class="list-item" sty;e="              padding-top: 2.5rem;
+              padding-bottom: 1rem;">
                                     Chart of Taxes (after execution of removal Script)
                                 </p>
                                 <div class="oe_demo  oe_screenshot" style="max-height: 100%">
@@ -330,7 +319,9 @@
                     </div>
                 </div>
             </section>
-            <section class="container oe_spaced oe_dark spacing">
+            <section class="container oe_spaced oe_dark spacing" style=" padding: 4rem;
+                background-color: #fff;
+                margin: 0 auto;">
                 <div class="row ">
                     <div class="col-md-8 col-md-offset-2">
                         <h2 class="" style="color:#875A7B;">Support</h2>
@@ -350,7 +341,7 @@
                                 </p>
                             </div>
                             <div class="col-sm-6 col-sm-offset-6">
-                                <p class="logo-wrapper">
+                                <p class="logo-wrapper text-right">
                                     <a href="//opusvl.com">
                                         <img itemprop="image" class="deep-1 footer-image " src="./opusvl-black-logo.svg">
                                     </a>
