@@ -51,7 +51,7 @@
 
     Click the 'Reset Accounts' button.  Note that this operation, especially the voucher cancellation stage, is quite slow.
 """,
-    'images': ['static/description/app-logo.jpeg'
+    'images': ['static/description/Reset-Accounting-Cover-Image.png'
     ],
     'depends': [
         'account',
